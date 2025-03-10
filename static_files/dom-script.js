@@ -54,37 +54,38 @@
 function addInfo() {
 
   // returns the value based on user's input
-  var newRank = document.getElementById("rank").value;
-  var newName = document.getElementById("name1").value;
-  var newDesc = document.getElementById("description").value;
-  var newImage = document.getElementById("url").value;
+  var rankInput = document.getElementById("rank").value;
+  var nameInput = document.getElementById("name1").value;
+  var descInput = document.getElementById("description").value;
+  var imageInput = document.getElementById("url").value;
 
+  // creates list and holds all the information
   var forInputList = document.createElement("li");
 
-  var rankInput = document.createElement("div");
-  rankInput.innerText = newRank;
+  // creates a rank element to hold rank input
+  var rankElement = document.createElement("div");
+  rankElement.innerText = rankInput;
 
-  var nameInput = document.createElement("div");
-  nameInput.innerText = newName;
+  // creates a name element to hold name input
+  var nameElement = document.createElement("div");
+  nameElement.innerText = nameInput;
 
-  var descInput = document.createElement("div");
-  descInput.innerText = newDesc;
+  // creates a description element to hold desc input
+  var descElement = document.createElement("div");
+  descElement.innerText = descInput;
 
-  var imageInput = document.createElement("div");
-  imageInput.innerText = newImage;
+  // creates a image element to hold image url
+  var imageElement = document.createElement("div");
+  imageElement.innerText = imageInput;
 
-  forInputList.appendChild(rankInput);
-  forInputList.appendChild(nameInput);
-  forInputList.appendChild(descInput);
-  forInputList.appendChild(imageInput);
+  // appends all the element in the input list
+  forInputList.appendChild(rankElement);
+  forInputList.appendChild(nameElement);
+  forInputList.appendChild(descElement);
+  forInputList.appendChild(imageElement);
 
+  // append all the input list into infolist id
   var boxList = document.getElementById("infoList");
   boxList.appendChild(forInputList)
 
-}
-
-
-
-// // EVENT LISTENER
-// var addButton = document.getElementById("addButton");
-// addButton.addEventListener("click", greet);
+};
