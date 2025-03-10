@@ -1,0 +1,15 @@
+{
+  "name": "front-end-scripting",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Demo for Front-End Scripting",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

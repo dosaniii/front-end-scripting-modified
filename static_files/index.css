@@ -1,0 +1,17 @@
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  background-color: white;
+  color: black;
+  transition: 500ms;
+}
+
+li:hover {
+  background-color: black;
+  color: white;
+  transition: 500ms;
+}
