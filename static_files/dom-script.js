@@ -37,8 +37,8 @@ topImage.removeAttribute("width");
 // animeList.removeChild(animeList.children[3]);
 
 // SECOND WAY
-var frieren = document.getElementById("frieren");
-frieren.parentNode.removeChild(frieren);
+// var frieren = document.getElementById("frieren");
+// frieren.parentNode.removeChild(frieren);
 
 // ADD ELEMENT TO A PARENT NODE
 var newAnime = document.createElement("li");
@@ -60,16 +60,62 @@ function greet() {
   addButton.addEventListener("click", addElement);
 }
 
-function addElement() {
-  var newAnime = document.createElement("li");
-  newAnime.id = "futureDiary";
-  newAnime.innerText = "Future Diary";
-  newAnime.className = "anime";
 
-  var animeList = document.getElementById("animeList");
-  animeList.appendChild(newAnime);
+function addInfo() {
+
+  // for rank
+  var rankInput = document.getElementById("rank");
+  var rank = rankInput.value;
+
+  newBox = document.createElement("li")
+  newBox.id = rank.toLowerCase();
+  newBox.innerText = newBox;
+  newBox.className = "inputBox";
+
+  storeBox = document.getElementById("infoList");
+  storeBox.appendChild(newBox);
+
+  // for name
+  var nameInput = document.getElementById("name1");
+  var name = nameInput.value;
+
+  var newBox = document.createElement("li")
+  newBox.id = name.toLowerCase();
+  newBox.innerText = newBox;
+  newBox.className = "inputBox";
+
+  storeBox = document.getElementById("infoList");
+  storeBox.appendChild(newBox);
+
+  // for description
+  var descInput = document.getElementById("description");
+
+  var desc = descInput.value;
+  var newBox = document.createElement("li")
+  newBox.id = descInput.toLowerCase();
+  newBox.innerText = newBox;
+  newBox.className = "inputBox";
+
+  storeBox = document.getElementById("infoList");
+  storeBox.appendChild(newBox);
+
+
+  var imageInput = document.getElementById("url");
+  var url = imageInput.value;
+
+  var newBox = document.createElement("li")
+  newBox.id = url.toLowerCase();
+  newBox.innerText = newBox;
+  newBox.className = "inputBox";
+  newBox.src = name;
+
+  storeBox = document.getElementById("infoList");
+  storeBox.appendChild(newBox);
+
 }
 
-// EVENT LISTENER
-var addButton = document.getElementById("addButton");
-addButton.addEventListener("click", greet);
+
+
+// // EVENT LISTENER
+// var addButton = document.getElementById("addButton");
+// addButton.addEventListener("click", greet);

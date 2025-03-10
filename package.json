@@ -1,14 +1,22 @@
 {
-  "name": "front-end-scripting",
+  "name": "exer-07-front-end-scripting-dosaniii",
   "version": "1.0.0",
   "type": "module",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/G4_DPacI)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMSC-100-2S-AY2024-2025/exer-07-front-end-scripting-dosaniii.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": "Demo for Front-End Scripting",
+  "bugs": {
+    "url": "https://github.com/CMSC-100-2S-AY2024-2025/exer-07-front-end-scripting-dosaniii/issues"
+  },
+  "homepage": "https://github.com/CMSC-100-2S-AY2024-2025/exer-07-front-end-scripting-dosaniii#readme",
   "dependencies": {
     "express": "^4.21.2"
   }

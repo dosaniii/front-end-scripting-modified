@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>U1L Front End Scripting</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="http://localhost:3000/index.css" />
   </head>
+
+  <!--FOR USER'S INPUT-->
   <body>
     <div class="container" id="main-container">
       <!-- TOP IMAGE -->
-      <img
+
+      <!-- <img
         src="https://www.strafe.com/_next/image/?url=https%3A%2F%2Fwww.strafe.com%2Fesports-betting%2Fstrafe-news%2Fwp-content%2Fuploads%2Fsites%2F29%2FRiot-Games-focuses-on-expanding-its-League-of-Legends-presence-in-India-scaled.jpg&w=3840&q=75"
         height="100px"
         id="main-art"
         class="art"
         width="100px"
-      />
-      <!-- ANIMES CONTAINER -->
+      /> -->
+
+      <!-- ANIMES CONTAINER
       <div class="container" id="animesContainer">
         <h3 class="header" id="animesLabel">Animes</h3>
         <ol class="list" id="animeList">
@@ -26,25 +30,47 @@
           <li class="anime" id="frieren">Frieren</li>
           <li class="anime" id="sakomotoDays">Sakomoto Days</li>
         </ol>
-      </div>
-      <div class="container" id="animesContainer">
-        <h3 class="header" id="gamesLabel">Games</h3>
-        <ol class="list" id="animeList">
-          <li class="game" id="lol">League of Legends</li>
-          <li class="game" id="valorant">Valorant</li>
-          <li class="game" id="overwatch">JJK</li>
-          <li class="game" id="csgo">CSGO</li>
-          <li class="game" id="nba">NBA</li>
-        </ol>
-      </div>
+      </div> -->
+
+
+
       <!-- INPUT TYPE TEXT -->
-      <label for="name">Name: </label>
-      <input type="text" id="name" />
+      <label for="name">Rank: </label>
+      <input type="text" id="rank" />
       <br />
+
+      <label for="name">Name: </label>
+      <input type="text" id="name1" />
+      <br />
+
+      <label for="name">Description: </label>
+      <input type="text" id="description" />
+      <br />
+
+      <label for="name">Image URL:</label>
+      <input type="text" id="url" />
+      <br />
+
       <!-- BUTTON -->
-      <button onclick="addElement()" class="btn" id="addButton">
-        Add Anime
+      <button
+        onclick="addInfo()"
+        class="btn"
+        id="addButton"
+      >
+        Add
       </button>
+    </div>
+
+            <!--FFOR OUTPUT CONTAINER-->
+            <div class="container" id="output-container">
+              <!-- <h3 class="header" id="userinfo"></h3> -->
+              <ol class="list" id="infolist">
+                <li>
+                  <!--STORES INFORATION-->
+                </li>
+              </ol>
+            </div>
+      
     </div>
     <script src="http://localhost:3000/dom-script.js"></script>
   </body>
