@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-li {
+/* li {
   background-color: white;
   color: black;
   transition: 500ms;
@@ -14,4 +14,4 @@ li:hover {
   background-color: black;
   color: white;
   transition: 500ms;
-}
+} */
